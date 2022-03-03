@@ -1,0 +1,40 @@
+.users-table {
+  margin-top: 40px;
+
+  table {
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid rgba(33, 63, 125, 0.06);
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+    text-align: left;
+    color: #545f7d;
+    border-collapse: collapse;
+
+    thead {
+      text-transform: uppercase;
+      font-size: 12px;
+
+      th {
+        margin-bottom: 37px;
+        padding: 30px;
+      }
+    }
+
+    tbody {
+      font-size: 14px;
+
+      tr {
+        border-bottom: solid 1px rgba(33, 63, 125, 0.1);
+
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+
+      td {
+        padding: 21px 0px 23px 30px;
+      }
+    }
+  }
+}

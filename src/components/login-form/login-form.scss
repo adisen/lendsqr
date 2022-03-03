@@ -1,0 +1,49 @@
+.login-form {
+  h1 {
+    color: #213f7d;
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+  }
+
+  p {
+    color: #545f7d;
+    margin-top: 0;
+    margin-bottom: 3rem;
+  }
+
+  input {
+    width: 100%;
+    padding: 17.5px 16px;
+    margin-bottom: 24px;
+    border-radius: 5px;
+    border: solid 2px rgba(84, 95, 125, 0.15);
+    // display: block;
+
+    ::placeholder {
+      color: #545f7d;
+      font-size: 14px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    color: #39cdcc;
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  button {
+    color: #fff;
+    background-color: #39cdcc;
+    border: none;
+    width: 100%;
+    margin-top: 24px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 15px 0;
+    font-size: 14px;
+    cursor: pointer;
+  }
+}
