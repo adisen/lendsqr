@@ -53,6 +53,10 @@
     padding: 13px 31px;
     border-radius: 0 5px 5px 0;
   }
+
+  @media (max-width: 460px) {
+    display: none;
+  }
 }
 
 .top-nav__info {
@@ -74,5 +78,9 @@
     img {
       border-radius: 100%;
     }
+  }
+
+  @media (max-width: 460px) {
+    gap: 10px;
   }
 }

@@ -3,11 +3,7 @@ import TopNav from '../../components/top-nav';
 import SideNav from '../../components/side-nav';
 import './dashboard.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faCoins,
-  faUserGroup,
-  faUsers
-} from '@fortawesome/free-solid-svg-icons';
+import { faCoins, faUserGroup } from '@fortawesome/free-solid-svg-icons';
 import UsersTable from '../../components/users-table';
 
 const Dashboard = () => {
