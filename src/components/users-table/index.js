@@ -1,7 +1,7 @@
-import { faEllipsisVertical } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './users-table.scss';
+import axios from 'axios';
+import TableRow from './table-row';
 
 const data = [
   {
@@ -88,38 +88,36 @@ const data = [
 ];
 
 const UsersTable = () => {
+  const [aData, setAData] = useState([]);
+
+  useEffect(() => {
+    axios.get('https://jsonplaceholder.typicode.com/users').then(res => {
+      setAData(res.data);
+    });
+  }, []);
+
   return (
     <section className='users-table'>
-      <table>
-        <thead>
-          <tr>
-            <th>Organization</th>
-            <th>Username</th>
-            <th>Email</th>
-            <th>Phone Number</th>
-            <th>Date Joined</th>
-            <th>Status</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-          {data.map(user => {
-            return (
-              <tr>
-                <td>{user.organization}</td>
-                <td>{user.username}</td>
-                <td>{user.email}</td>
-                <td>{user.phoneNumber}</td>
-                <td>{user.dateJoined}</td>
-                <td>{user.status}</td>
-                <td>
-                  <FontAwesomeIcon icon={faEllipsisVertical} />
-                </td>
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
+      <div>
+        <table>
+          <thead>
+            <tr>
+              <th>Organization</th>
+              <th>Username</th>
+              <th>Email</th>
+              <th>Phone Number</th>
+              <th>Date Joined</th>
+              <th>Status</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            {aData.map(user => {
+              return <TableRow user={user} />;
+            })}
+          </tbody>
+        </table>
+      </div>
     </section>
   );
 };

@@ -89,3 +89,57 @@ main {
     }
   }
 }
+
+.dashboard__footer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 20px;
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    line-height: 16px;
+    color: rgba($color: #545f7d, $alpha: 0.6);
+
+    select {
+      width: 80px;
+      height: 30px;
+      background: rgba(33, 63, 125, 0.1);
+      border-radius: 4px;
+      padding: 0 14px;
+    }
+  }
+
+  .pagination {
+    font-size: 16px !important;
+
+    .icon {
+      font-size: 16px;
+      padding: 8px 12px;
+      background: rgba(33, 63, 125, 0.1);
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    span {
+      cursor: pointer;
+
+      &.active {
+        color: #545f7d;
+      }
+    }
+  }
+
+  @media (max-width: 460px) {
+    justify-content: center;
+    align-items: center;
+
+    & > div {
+      margin-bottom: 30px;
+      justify-content: center;
+    }
+  }
+}

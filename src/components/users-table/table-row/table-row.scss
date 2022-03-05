@@ -1,0 +1,49 @@
+tr {
+  border-bottom: solid 1px rgba(33, 63, 125, 0.1);
+  position: relative;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  .icon {
+    cursor: pointer;
+    width: 70px;
+  }
+
+  .inactive {
+    span {
+      background: rgba($color: #545f7d, $alpha: 0.06);
+      display: block;
+      padding: 13px 7px;
+      border-radius: 60px;
+      text-align: center;
+    }
+  }
+
+  .action {
+    position: absolute;
+    z-index: 20;
+    right: 0;
+    width: 180px;
+    height: 130px;
+    background-color: #ffffff;
+    border: 1px solid rgba(84, 95, 125, 0.04);
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+    padding: 20px;
+
+    p {
+      cursor: pointer;
+      color: #545f7d;
+    }
+    a {
+      text-decoration: none;
+      color: #545f7d;
+    }
+  }
+}
+
+td {
+  padding: 21px 0px 23px 0;
+}

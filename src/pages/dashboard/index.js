@@ -3,7 +3,12 @@ import TopNav from '../../components/top-nav';
 import SideNav from '../../components/side-nav';
 import './dashboard.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoins, faUserGroup } from '@fortawesome/free-solid-svg-icons';
+import {
+  faAngleLeft,
+  faAngleRight,
+  faCoins,
+  faUserGroup
+} from '@fortawesome/free-solid-svg-icons';
 import UsersTable from '../../components/users-table';
 
 const Dashboard = () => {
@@ -37,6 +42,30 @@ const Dashboard = () => {
             </div>
           </div>
           <UsersTable />
+          <div className='dashboard__footer'>
+            <div>
+              <p>Showing</p>
+              <select name='items'>
+                <option value='100'>100</option>
+                <option value='50'>50</option>
+                <option value='20'>20</option>
+                <option value='10'>10</option>
+              </select>
+              <p>out of 100</p>
+            </div>
+            <div className='pagination'>
+              <FontAwesomeIcon icon={faAngleLeft} className='icon' />
+              <div>
+                <span className='active'>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>...</span>
+                <span>15</span>
+                <span>16</span>
+              </div>
+              <FontAwesomeIcon icon={faAngleRight} className='icon' />
+            </div>
+          </div>
         </section>
       </div>
     </main>
