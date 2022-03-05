@@ -5,9 +5,6 @@ import App from './App';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 // Fonts
-import './fonts/AvenirNextLTPro-Bold.otf';
-import './fonts/AvenirNextLTPro-It.otf';
-import './fonts/AvenirNextLTPro-Regular.otf';
 
 ReactDOM.render(
   <React.StrictMode>
