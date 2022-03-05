@@ -113,7 +113,7 @@ const UsersTable = () => {
           </thead>
           <tbody>
             {aData.map(user => {
-              return <TableRow user={user} />;
+              return <TableRow user={user} key={user.id} />;
             })}
           </tbody>
         </table>

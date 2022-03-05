@@ -1,4 +1,5 @@
-.side-nav {
+.side-nav,
+.side-nav-mobile {
   width: 20%;
   box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.04);
   padding-top: 20px;
@@ -55,4 +56,23 @@
   @media (max-width: 460px) {
     display: none;
   }
+}
+
+.side-nav-mobile {
+  // display: none;
+  width: 80%;
+  z-index: 20;
+}
+
+.mobile-nav {
+  width: 100%;
+  position: fixed;
+  z-index: 20;
+  top: 100px;
+  padding: 0 0 20px;
+  font-size: larger;
+  display: block;
+  color: #213f7d;
+  background-color: #fff;
+  text-align: center;
 }
