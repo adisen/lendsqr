@@ -27,14 +27,14 @@ const TableRow = ({ user }) => {
   }, [myRef]);
 
   return (
-    <tr key={user.id}>
-      <td>{user.company.name}</td>
+    <tr>
+      <td>{user.organization}</td>
       <td>{user.username}</td>
       <td>{user.email}</td>
       <td>{user.phone}</td>
-      <td>May 15, 2020 10:00 AM</td>
-      <td className='inactive'>
-        <span>Inactive</span>
+      <td>{user.dateJoined}</td>
+      <td className={user.status.toLowerCase()}>
+        <span>{user.status}</span>
       </td>
       <td>
         <FontAwesomeIcon

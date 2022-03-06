@@ -21,6 +21,39 @@ tr {
     }
   }
 
+  .active {
+    color: #39cd62;
+    span {
+      background: rgba($color: #39cd62, $alpha: 0.06);
+      display: block;
+      padding: 13px 7px;
+      border-radius: 60px;
+      text-align: center;
+    }
+  }
+  .blacklisted {
+    color: #e4033b;
+
+    span {
+      background: rgba($color: #e4033b, $alpha: 0.1);
+      display: block;
+      padding: 13px 7px;
+      border-radius: 60px;
+      text-align: center;
+    }
+  }
+
+  .pending {
+    color: #e9b200;
+    span {
+      background: rgba($color: #e9b200, $alpha: 0.1);
+      display: block;
+      padding: 13px 7px;
+      border-radius: 60px;
+      text-align: center;
+    }
+  }
+
   .action {
     position: absolute;
     z-index: 20;
