@@ -82,6 +82,7 @@
 
   @media (max-width: 460px) {
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
 
     & > div {
